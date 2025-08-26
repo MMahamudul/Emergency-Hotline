@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emergency Hotline</title>
-    <!-- Style link -->
+    <!--  Style link-->
+      <link rel="stylesheet" href="./style/styles.css">
+    <!-- Daisy UI and Tailwind link -->
      <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- Font awesome CDN -->
@@ -12,6 +14,68 @@
      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <!-- navbar section start-->
+     <div class="navbar bg-base-100 shadow-sm">
+  <div class="flex-1">
+    <div class="flex">
+    <img src="./assets/logo.png" class="logo" alt="" >
+    <h5 class="text-xl text-[#006747] ml-2 font-bold">Emergency <br> Hotline</h5>
+    </div>
+    
+  </div>
+  <div class="flex-none">
+    <div class="menu menu-horizontal px-1">
+      
+      <div class="bg-[#41ff6b1a]  p-[20px] rounded-[50px] flex justify-center items-center" >
+        <span class="mr-2 pl-4 ">0</span>
+        <img src="./assets/heart.png" alt="" class="iconImage">
+
+      </div>
+      <div class="bg-[#41ff6b1a] ml-8 p-[20px] rounded-[50px] flex justify-center items-center">
+        <span class="mr-2 pl-4">100</span>
+    <img src="./assets/coin.png" alt="" class="iconImage">
+    </div>
+      <div class="bg-green-500 ml-8 p-[36px] rounded-[40px]" >
+        <span class="text-white">2</span> <span class="text-white">Copy</span></div>
+    </div>
+  </div>
+</div>
+<!-- navbar section end-->
+<!-- banner section start-->
+ <section class="bg-[#41ff6b1a]">
+    <div class="w-full h-[250px] bg-[linear-gradient(to_right,#013223_0%,#006747_50%,#013223_100%)]">
+        <img src="assets/logo-dark.png" class="mx-auto pt-10 w-[150px] h-[180px]">
+        <h1 class="text-white text-center">Emergency Service Directory</h1>
+        <p class="text-white text-center">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+    </div>
+ </section>
+
+ <!-- banner end -->
+  <!-- card section start-->
+   <section class="mt-4">
+    <div class="card bg-base-100 w-96 shadow-sm">
+        <div class="flex items-center justify-between mr-3 p-4">
+            <figure>
+                <img
+                src="./assets/emergency.png"
+                alt="emergency" />
+            </figure>
+            <i class="fa-regular fa-heart"></i>
+
+        </div>
+  
+  <div class="card-body">
+    <h2 class="card-title">National Emergency Number</h2>
+    <p>National Emergency</p>
+    <h2>999</h2>
+    <span class="bg-gray-200 rounded-full w-[30px] p-1">All</span>
+    <div class="card-actions">
+      <button class="btn btn-soft w-40"><i class="fa-regular fa-copy"></i> Copy</button>
+      <button class="btn btn-soft w-40"><i class="fa-solid fa-phone"></i> Call</button>
+    </div>
+  </div>
+</div>
+   </section>
 
 
     <script src="./js/script.js"></script>
