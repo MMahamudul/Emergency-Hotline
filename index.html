@@ -14,7 +14,8 @@
      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <!-- navbar section start-->
+    <nav style="background-color: white;">
+          <!-- navbar section start-->
      <div class="navbar bg-base-100 shadow-sm">
   <div class="flex-1">
     <div class="flex">
@@ -26,36 +27,48 @@
   <div class="flex-none">
     <div class="menu menu-horizontal px-1">
       
-      <div class="bg-[#41ff6b1a]  p-[20px] rounded-[50px] flex justify-center items-center" >
+      <div class="bg-[#41ff6b1a]  p-[20px] rounded-xl flex justify-center items-center" >
         <span class="mr-2 pl-4 ">0</span>
         <img src="./assets/heart.png" alt="" class="iconImage">
 
       </div>
-      <div class="bg-[#41ff6b1a] ml-8 p-[20px] rounded-[50px] flex justify-center items-center">
+      <div class="bg-[#41ff6b1a] ml-8 p-[20px] rounded-xl flex justify-center items-center">
         <span class="mr-2 pl-4">100</span>
     <img src="./assets/coin.png" alt="" class="iconImage">
     </div>
-      <div class="bg-green-500 ml-8 p-[36px] rounded-[40px]" >
+      <div class="bg-green-500 ml-8 p-2 rounded-xl" >
         <span class="text-white">2</span> <span class="text-white">Copy</span></div>
     </div>
   </div>
 </div>
 <!-- navbar section end-->
+    </nav>
+    <main class="bg-[#41ff6b1a]">
+      
 <!-- banner section start-->
- <section class="bg-[#41ff6b1a]">
-    <div class="w-full h-[250px] bg-[linear-gradient(to_right,#013223_0%,#006747_50%,#013223_100%)]">
+ <section>
+    <div class="w-full max-h-[100vh] bg-[linear-gradient(to_right,#013223_0%,#006747_50%,#013223_100%)] p-8">
         <img src="assets/logo-dark.png" class="mx-auto pt-10 w-[150px] h-[180px]">
-        <h1 class="text-white text-center">Emergency Service Directory</h1>
-        <p class="text-white text-center">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+        <h1 class="text-white text-center text-[40px] font-bold">Emergency Service Directory</h1>
+        <p class="text-white text-center text-[20px] font-semibold">Government Emergency Services at Your Fingertip, A Project by  Government of the People’s Republic of Bangladesh</p>
     </div>
  </section>
 
  <!-- banner end -->
   <!-- card section start-->
-   <section class="mt-4">
-    <div class="card bg-base-100 w-96 shadow-sm">
-        <div class="flex items-center justify-between mr-3 p-4">
-            <figure>
+   
+   <section>
+  <div class="min-h-screen bg-gray-50 p-6">
+  <!-- Outer grid: 4 columns on desktop, 1 column on mobile -->
+  <div class="grid grid-cols-1 lg:grid-cols-4 gap-4">
+    
+    
+    <div class="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
+      
+      <!-- Card -->
+      <div class="card bg-base-100 w-96 shadow-sm">
+        <div class="flex items-center justify-between mr-2 p-4">
+            <figure class="icons">
                 <img
                 src="./assets/emergency.png"
                 alt="emergency" />
@@ -75,8 +88,163 @@
     </div>
   </div>
 </div>
+
+     
+           <div class="card bg-base-100 w-96 shadow-sm">
+        <div class="flex items-center justify-between mr-2 p-4">
+            <figure class="icons">
+                <img
+                src="./assets/police.png"
+                alt="police" />
+            </figure>
+            <i class="fa-regular fa-heart"></i>
+
+        </div>
+  
+  <div class="card-body">
+    <h2 class="card-title">Police Helpline Number</h2>
+    <p>Police</p>
+    <h2>999</h2>
+    <span class="bg-gray-200 rounded-full w-[30px] p-1">Police</span>
+    <div class="card-actions">
+      <button class="btn btn-soft w-40"><i class="fa-regular fa-copy"></i> Copy</button>
+      <button class="btn btn-soft w-40"><i class="fa-solid fa-phone"></i> Call</button>
+    </div>
+  </div>
+</div>
+     <div class="card bg-base-100 w-96 shadow-sm">
+        <div class="flex items-center justify-between mr-3 p-4">
+            <figure class="icons">
+                <img
+                src="./assets/fire-service.png"
+                alt="fire-service" />
+            </figure>
+            <i class="fa-regular fa-heart"></i>
+
+        </div>
+  
+  <div class="card-body">
+    <h2 class="card-title">Fire Service Number</h2>
+    <p>Fire Service</p>
+    <h2>999</h2>
+    <span class="bg-gray-200 rounded-full w-[30px] p-1">Fire</span>
+    <div class="card-actions">
+      <button class="btn btn-soft w-40"><i class="fa-regular fa-copy"></i> Copy</button>
+      <button class="btn btn-soft w-40"><i class="fa-solid fa-phone"></i> Call</button>
+    </div>
+  </div>
+</div>
+     <div class="card bg-base-100 w-96 shadow-sm">
+        <div class="flex items-center justify-between mr-3 p-4">
+            <figure class="icons">
+                <img
+                src="./assets/Bangladesh-Railway.png"
+                alt="ambulance" />
+            </figure>
+            <i class="fa-regular fa-heart"></i>
+
+        </div>
+  
+  <div class="card-body">
+    <h2 class="card-title">Bangladesh Railway Helpline </h2>
+    <p>Bangladesh Railway</p>
+    <h2>1963</h2>
+    <span class="bg-gray-200 rounded-full w-[30px] p-1">Travel</span>
+    <div class="card-actions">
+      <button class="btn btn-soft w-40"><i class="fa-regular fa-copy"></i> Copy</button>
+      <button class="btn btn-soft w-40"><i class="fa-solid fa-phone"></i> Call</button>
+    </div>
+  </div>
+</div>
+     <div class="card bg-base-100 w-96 shadow-sm">
+        <div class="flex items-center justify-between mr-3 p-4">
+            <figure class="icons">
+                <img
+                src="./assets/emergency.png"
+                alt="emergency" />
+            </figure>
+            <i class="fa-regular fa-heart"></i>
+
+        </div>
+  
+  <div class="card-body">
+    <h2 class="card-title">Women & Child Helpline</h2>
+    <p>Women & Child Helpline</p>
+    <h2>109</h2>
+    <span class="bg-gray-200 rounded-full w-[30px] p-1">All</span>
+    <div class="card-actions">
+      <button class="btn btn-soft w-40"><i class="fa-regular fa-copy"></i> Copy</button>
+      <button class="btn btn-soft w-40"><i class="fa-solid fa-phone"></i> Call</button>
+    </div>
+  </div>
+</div>
+     <div class="card bg-base-100 w-96 shadow-sm">
+        <div class="flex items-center justify-between mr-3 p-4">
+            <figure class="icons">
+                <img
+                src="./assets/brac.png"
+                alt="brac" />
+            </figure>
+            <i class="fa-regular fa-heart"></i>
+
+        </div>
+  
+  <div class="card-body">
+    <h2 class="card-title">Brac Helpline</h2>
+    <p>Brac</p>
+    <h2>999</h2>
+    <span class="bg-gray-200 rounded-full w-[30px] p-1">NGO</span>
+    <div class="card-actions">
+      <button class="btn btn-soft w-40"><i class="fa-regular fa-copy"></i> Copy</button>
+      <button class="btn btn-soft w-40"><i class="fa-solid fa-phone"></i> Call</button>
+    </div>
+  </div>
+</div>
+
+    </div>
+
+    <!-- Right: Call History -->
+    <div class="bg-white rounded-xl shadow p-4 flex flex-col max-h-[80vh]">
+      <!-- Header -->
+      <div class="flex justify-between items-center mb-4">
+        <h2 class="font-semibold text-gray-800">Call History</h2>
+        <button class="btn btn-success rounded-full bg-[#00A63E] text-white">Clear</button>
+      </div>
+
+      <!-- Scrollable list -->
+      <div class="flex flex-col gap-3 overflow-y-auto">
+        <div class="pb-2">
+          <p class="text-gray-700 text-sm"></p>
+          
+        </div>
+
+        <div class="pb-2">
+         <p class="text-gray-700 text-sm"></p>
+          
+        </div>
+
+        <div class=" pb-2">
+         <p class="text-gray-700 text-sm"></p>
+          
+        </div>
+
+        
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
    </section>
 
+    </main>
 
     <script src="./js/script.js"></script>
 </body>
