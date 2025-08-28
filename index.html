@@ -33,7 +33,7 @@
 
       </div>
       <div class="bg-[#41ff6b1a] ml-8 p-[20px] rounded-xl flex justify-center items-center w-[100px] h-[52px]">
-        <span class="mr-3 pl-3 font-bold">100</span>
+        <span id="available-coin" class="mr-3 pl-3 font-bold">100</span>
     <img src="./assets/coin.png" alt="coin icon" class="iconImage">
     </div>
       <div class="bg-green-500 ml-6 rounded-2xl flex justify-center items-center w-[100px] h-[52px]" >
@@ -60,14 +60,15 @@
    
    <section>
   <div class="min-h-screen bg-gray-50 p-6">
-  <!-- Outer grid: 4 columns on desktop, 1 column on mobile -->
-  <div class="grid grid-cols-1 lg:grid-cols-4 gap-4">
+  
+  <div class="grid grid-cols-1 lg:grid-cols-4 gap-3">
     
     
-    <div class="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
+    <div class="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
       
       <!-- Card -->
-      <div class="card bg-base-100 w-96 shadow-sm">
+       <!-- card-1 -->
+      <div class="card bg-base-100 w-96 shadow-md">
         <div class="flex items-center justify-between mr-2 p-4">
             <figure class="icons">
                 <img
@@ -78,20 +79,23 @@
 
         </div>
   
-  <div class="card-body">
-    <h2 class="card-title">National Emergency Number</h2>
-    <p>National Emergency</p>
-    <h2>999</h2>
-    <span class="bg-gray-200 rounded-full w-[30px] p-1">All</span>
+  <div class="card-body flex gap-2 p-2 bg-white rounded-md shadow">
+    <h2 id="title" class="card-title">National Emergency Number</h2>
+    <p class="service-name">National Emergency</p>
+    <h2 class="service-number">999</h2>
+    
+     <div class="flex gap-2 p-2 bg-white rounded-md">
+          <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">All</span>
+    </div>
     <div class="card-actions">
       <button class="btn btn-soft w-40"><i class="fa-regular fa-copy"></i> Copy</button>
-      <button class="btn btn-soft w-40"><i class="fa-solid fa-phone"></i> Call</button>
+      <button class="btn btn-soft w-40 call-button"><i class="fa-solid fa-phone"></i> Call</button>
     </div>
   </div>
 </div>
 
-     
-           <div class="card bg-base-100 w-96 shadow-sm">
+     <!-- card-2 -->
+           <div class="card bg-base-100 w-96 shadow-md">
         <div class="flex items-center justify-between mr-2 p-4">
             <figure class="icons">
                 <img
@@ -104,16 +108,19 @@
   
   <div class="card-body">
     <h2 class="card-title">Police Helpline Number</h2>
-    <p>Police</p>
-    <h2>999</h2>
-    <span class="bg-gray-200 rounded-full w-[30px] p-1">Police</span>
+    <p class="service-name">Police</p>
+    <h2 class="service-number">999</h2>
+    <div class="flex gap-2 p-2 bg-white rounded-md ">
+          <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Police</span>
+    </div>
     <div class="card-actions">
       <button class="btn btn-soft w-40"><i class="fa-regular fa-copy"></i> Copy</button>
-      <button class="btn btn-soft w-40"><i class="fa-solid fa-phone"></i> Call</button>
+      <button class="btn btn-soft w-40 call-button"><i class="fa-solid fa-phone"></i> Call</button>
     </div>
   </div>
 </div>
-     <div class="card bg-base-100 w-96 shadow-sm">
+<!-- card-3 -->
+     <div class="card bg-base-100 w-96 shadow-md">
         <div class="flex items-center justify-between mr-3 p-4">
             <figure class="icons">
                 <img
@@ -126,16 +133,19 @@
   
   <div class="card-body">
     <h2 class="card-title">Fire Service Number</h2>
-    <p>Fire Service</p>
-    <h2>999</h2>
-    <span class="bg-gray-200 rounded-full w-[30px] p-1">Fire</span>
+    <p class="service-name">Fire Service</p>
+    <h2 class="service-number">111</h2>
+    <div class="flex gap-2 p-2 bg-white rounded-md">
+          <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Fire</span>
+    </div>
     <div class="card-actions">
       <button class="btn btn-soft w-40"><i class="fa-regular fa-copy"></i> Copy</button>
-      <button  class="btn btn-soft w-40 "><i class="fa-solid fa-phone"></i> Call</button>
+      <button  class="btn btn-soft w-40 call-button"><i class="fa-solid fa-phone"></i> Call</button>
     </div>
   </div>
 </div>
-     <div class="card bg-base-100 w-96 shadow-sm">
+<!-- card-4 -->
+     <div class="card bg-base-100 w-96 shadow-md">
         <div class="flex items-center justify-between mr-3 p-4">
             <figure class="icons">
                 <img
@@ -148,16 +158,19 @@
   
   <div class="card-body">
     <h2 class="card-title">Bangladesh Railway Helpline </h2>
-    <p>Bangladesh Railway</p>
-    <h2>1963</h2>
-    <span class="bg-gray-200 rounded-full w-[30px] p-1">Travel</span>
+    <p class="service-name">Bangladesh Railway</p>
+    <h2 class="service-number">1963</h2>
+    <div class="flex gap-2 p-2 bg-white rounded-md">
+          <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Travel</span>
+    </div>
     <div class="card-actions">
       <button class="btn btn-soft w-40"><i class="fa-regular fa-copy"></i> Copy</button>
-      <button class="btn btn-soft w-40"><i class="fa-solid fa-phone"></i> Call</button>
+      <button class="btn btn-soft w-40 call-button"><i class="fa-solid fa-phone"></i> Call</button>
     </div>
   </div>
 </div>
-     <div class="card bg-base-100 w-96 shadow-sm">
+<!-- card-5 -->
+     <div class="card bg-base-100 w-96 shadow-md">
         <div class="flex items-center justify-between mr-3 p-4">
             <figure class="icons">
                 <img
@@ -170,16 +183,19 @@
   
   <div class="card-body">
     <h2 class="card-title">Women & Child Helpline</h2>
-    <p>Women & Child Helpline</p>
-    <h2>109</h2>
-    <span class="bg-gray-200 rounded-full w-[30px] p-1">All</span>
+    <p class="service-name">Women & Child Helpline</p>
+    <h2 class="service-number">109</h2>
+    <div class="flex gap-2 p-2 bg-white rounded-md">
+          <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">All</span>
+    </div>
     <div class="card-actions">
       <button class="btn btn-soft w-40"><i class="fa-regular fa-copy"></i> Copy</button>
-      <button class="btn btn-soft w-40"><i class="fa-solid fa-phone"></i> Call</button>
+      <button class="btn btn-soft w-40 call-button"><i class="fa-solid fa-phone"></i> Call</button>
     </div>
   </div>
 </div>
-     <div class="card bg-base-100 w-96 shadow-sm">
+<!-- card-6 -->
+     <div class="card bg-base-100 w-96 shadow-md">
         <div class="flex items-center justify-between mr-3 p-4">
             <figure class="icons">
                 <img
@@ -191,13 +207,15 @@
         </div>
   
   <div class="card-body">
-    <h2 class="card-title">Brac Helpline</h2>
-    <p>Brac</p>
-    <h2>999</h2>
-    <span class="bg-gray-200 rounded-full w-[30px] p-1">NGO</span>
+    <h2 id="card-title">Brac Helpline</h2>
+    <p class="service-name">Brac</p>
+    <h2 class="service-number">999</h2>
+    <div class="flex gap-2 p-2 bg-white rounded-md">
+          <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">NGO</span>
+    </div>
     <div class="card-actions">
       <button class="btn btn-soft w-40"><i class="fa-regular fa-copy"></i> Copy</button>
-      <button class="btn btn-soft w-40"><i class="fa-solid fa-phone"></i> Call</button>
+      <button class="btn btn-soft w-40 call-button"><i class="fa-solid fa-phone"></i> Call</button>
     </div>
   </div>
 </div>
@@ -213,7 +231,7 @@
       </div>
 
       <!-- Scrollable list -->
-      <div class="flex flex-col gap-3 overflow-y-auto">
+      <div class="flex flex-col gap-2 overflow-y-auto">
         <div class="pb-2">
           <p class="text-gray-700 text-sm"></p>
           
