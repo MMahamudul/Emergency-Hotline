@@ -16,6 +16,7 @@ for(const iconHit of iconHits){
 /* Call button feature  */
 
 let callButtons = document.querySelectorAll(".call-button");
+let callHistory = document.getElementById("call-history");
 
 
   for (const callButton of callButtons) {
@@ -26,23 +27,48 @@ let callButtons = document.querySelectorAll(".call-button");
       
       let service = cardBody.querySelector(".service-name").innerText;
       let number = cardBody.querySelector(".service-number").innerText;
+      
 
       
-      alert('Calling ' + service + "\n" + number);
-
+        
+       
         let coins= parseInt(document.getElementById("available-coin").innerText);
 
         if(coins >= 20){
+            alert('Calling ' + service + "\n" + number);
             let currentCoins = coins - 20;
             let currentBalance = document.getElementById("available-coin").innerText = currentCoins;
             currentBalance.innerText = currentCoins;
+            
+            const callHistoryElement = document.createElement("div");
+    /* adding style to the container */
+            callHistoryElement.classList.add("history-card");
+
+    /* creating elements */
+            const historyServiceName = document.createElement("h1")
+            historyServiceName.innerText = service;
+            const historyServiceNum = document.createElement("h3")
+            historyServiceNum.innerText = number;
+    /* appended created elements */
+            callHistoryElement.appendChild(historyServiceName);
+            callHistoryElement.appendChild(historyServiceNum);
+            callHistory.appendChild(callHistoryElement);
+
         }else{
             alert("You account balance is running low. Please recharge coins")
             return;
         }
-        
+        document.querySelector(".history-content").innerText = service;
        
 
         
     });
   }
+
+  /* clear button feature */ 
+
+  document.getElementById("clear-button").addEventListener("click", function(){
+    document.getElementById("call-history").innerHTML = "";
+  })
+
+  
