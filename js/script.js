@@ -13,6 +13,8 @@ for(const iconHit of iconHits){
 }
 
 
+
+
 /* Call button feature  */
 
 let callButtons = document.querySelectorAll(".call-button");
@@ -29,9 +31,6 @@ let callHistory = document.getElementById("call-history");
       let number = cardBody.querySelector(".service-number").innerText;
       
 
-      
-        
-       
         let coins= parseInt(document.getElementById("available-coin").innerText);
 
         if(coins >= 20){
@@ -58,7 +57,7 @@ let callHistory = document.getElementById("call-history");
             alert("You account balance is running low. Please recharge coins")
             return;
         }
-        document.querySelector(".history-content").innerText = service;
+       
        
 
         
@@ -72,3 +71,15 @@ let callHistory = document.getElementById("call-history");
   })
 
   
+/* Copy button feature  */
+let totalCopy = 2;
+
+let copyHits = document.querySelectorAll(".copy-button");
+
+for(const copyHit of copyHits){
+    copyHit.addEventListener("click", function(){
+        totalCopy++;
+        document.getElementById("copy-count").innerText = totalCopy;
+
+    })
+}
